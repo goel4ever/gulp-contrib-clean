@@ -1,0 +1,40 @@
+{
+  "name": "gulp-contrib-clean",
+  "version": "0.1.2",
+  "description": "Gulp: Delete files and folders",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goel4ever/gulp-contrib-clean.git"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "clean",
+    "delete"
+  ],
+  "author": "Anshul Goel",
+  "contributors": [
+    {
+      "name": "Anshul Goel",
+      "email": "dec.anshul@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goel4ever/gulp-contrib-clean/issues"
+  },
+  "homepage": "https://github.com/goel4ever/gulp-contrib-clean#readme",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "dependencies": {
+    "fs": "0.0.2",
+    "gulp-util": "^3.0.4",
+    "through2": "^0.6.5"
+  }
+}
