@@ -26,9 +26,6 @@ module.exports = function( opts ) {
     }
   };
 
-  // TODO: Add total number of files and folders deleted
-  // TODO: List all files and folders deleted
-  // TODO: Make it work with pattern matching
   function clean(file, encoding, callback) {
     var options = opts || {};
 
