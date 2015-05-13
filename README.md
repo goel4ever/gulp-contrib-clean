@@ -11,10 +11,10 @@ npm install gulp-contrib-clean --save-dev
 var clean = require('gulp-contrib-clean');
 
 gulp.task('clean', function() {
-	gulp.src('src/**/*')
+	gulp.src('src/js')
 		.pipe(clean());
 ```
-<br>PS: As of now you can't pipe it with other plugins
+<br>PS: As of now you can't pipe it with other plugins or use regular expressions
 
 ## Note
 `This package is process of being created. Please be patient. Feel free to contribute if you like.`
