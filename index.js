@@ -9,23 +9,26 @@ var pluginName = 'gulp-contrib-clean';
 module.exports = function( opts ) {
 
   var deleteFolderFilesRecursive = function(path) {
-    if(fs.lstatSync(path).isDirectory()) {
-      if( fs.existsSync(path) ) {
-        fs.readdirSync(path).forEach(function(file){
+    if( fs.existsSync(path) ) {
+      if (fs.lstatSync(path).isDirectory()) {
+        fs.readdirSync(path).forEach(function(file) {
           var currentPath = path + "/" + file;
-          if(fs.lstatSync(currentPath).isDirectory()) {
+          if (fs.lstatSync(currentPath).isDirectory()) {
             deleteFolderFilesRecursive(currentPath);
           } else {
             fs.unlinkSync(currentPath);
           }
         });
         fs.rmdirSync(path);
+      } else {
+        fs.unlinkSync(path);
       }
-    } else if( fs.existsSync(path) ) {
-      fs.unlinkSync(path);
     }
   };
 
+  // TODO: Add total number of files and folders deleted
+  // TODO: List all files and folders deleted
+  // TODO: Make it work with pattern matching
   function clean(file, encoding, callback) {
     var options = opts || {};
 
@@ -41,8 +44,7 @@ module.exports = function( opts ) {
         console.log('Options to be implemented');
       }
     }
-
-    callback( null, file );
+    //callback( null, file );
   }
 
   return through.obj(clean);
