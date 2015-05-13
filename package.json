@@ -1,6 +1,6 @@
 {
   "name": "gulp-contrib-clean",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gulp: Delete files and folders",
   "main": "index.js",
   "scripts": {
