@@ -18,3 +18,10 @@ gulp.task('clean', function() {
 
 ## Note
 `This package is process of being created. Please be patient. Feel free to contribute if you like.`
+
+## TODO
+* Display total number of files and folders deleted
+* List all files and folders deleted if option verbose is passed
+* Make the plugin work with pattern matching
+* Support multiple sources
+* Support negation
