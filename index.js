@@ -9,6 +9,8 @@ var pluginName = 'gulp-contrib-clean';
 module.exports = function( opts ) {
 
   var deleteFolderFilesRecursive = function(path) {
+    var ctrFiles = 0;
+    var ctrFolders = 0;
     if( fs.existsSync(path) ) {
       if (fs.lstatSync(path).isDirectory()) {
         fs.readdirSync(path).forEach(function(file) {
@@ -17,13 +19,18 @@ module.exports = function( opts ) {
             deleteFolderFilesRecursive(currentPath);
           } else {
             fs.unlinkSync(currentPath);
+            ctrFiles++;
           }
         });
         fs.rmdirSync(path);
+        ctrFolders++;
       } else {
         fs.unlinkSync(path);
+        ctrFiles++;
       }
     }
+    console.log('Total Files deleted: ' + ctrFiles);
+    console.log('Total Folders deleted: ' + ctrFolders);
   };
 
   function clean(file, encoding, callback) {
