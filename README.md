@@ -1,4 +1,4 @@
-# gulp-contrib-clean ![Docs](https://readthedocs.org/projects/gulp-contrib-clean/badge/?version=latest)
+# gulp-contrib-clean [![Documentation](https://readthedocs.org/projects/gulp-contrib-clean/badge/?version=latest)](https://readthedocs.org/projects/gulp-contrib-clean/)
 Gulp: Delete files and folders
 
 ## Installation
