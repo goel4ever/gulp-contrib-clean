@@ -17,7 +17,7 @@ gulp.task('clean', function() {
 <br>PS: As of now you can't pipe it with other plugins or use regular expressions
 
 ## Note
-`This package is process of being created. Please be patient. Feel free to contribute if you like.`
+`This package is in process of being created. Please be patient. Feel free to contribute if you like.`
 
 ## TODO
 * List all files and folders deleted if option verbose is passed
