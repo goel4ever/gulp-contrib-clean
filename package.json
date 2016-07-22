@@ -15,7 +15,8 @@
     "gulp",
     "plugin",
     "clean",
-    "delete"
+    "delete",
+    "gulpplugin"
   ],
   "author": "Anshul Goel",
   "contributors": [
