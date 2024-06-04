@@ -39,7 +39,7 @@
     "through2": "^4.0.2"
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
+    "gulp": "^5.0.0",
     "jquery": "^3.7.1"
   }
 }
